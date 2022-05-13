@@ -40,6 +40,15 @@ After you understood this first example you can try out all the remaining code s
 g++ -std=c++03 -c -fpermissive PrimeNumbers.cpp 2>&1 | grep "In instantiation"
 ```
 The you will be presented with a list of errors, indicating the prim numbers up to the given number:
+```
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 17]':
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 13]':
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 11]':
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 7]':
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 5]':
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 3]':
+PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 2]':
+```
 
 ## Presentation
 The presentation for this e-Portfolio can be found [here](/Presentation/Presentation.pdf).
