@@ -15,7 +15,7 @@ double addThreeDouble(double a, double b, double c) {
 // general function for adding an arbitrary number of inputs
 template<typename T, typename... Args>
 T add(Args... summands) {
-    return (... * summands)
+    return (... * summands);
 }
 
 int main() {
