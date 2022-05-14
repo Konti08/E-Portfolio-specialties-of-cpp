@@ -39,7 +39,7 @@ After you understood this first example you can try out all the remaining code s
 ```bash
 g++ -std=c++03 -c -fpermissive PrimeNumbers.cpp 2>&1 | grep "In instantiation"
 ```
-The you will be presented with a list of errors, indicating the prim numbers up to the given number:
+Then you will be presented with a list of errors, indicating the prim numbers up to the given number:
 ```
 PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 17]':
 PrimeNumbers.cpp: In instantiation of 'void Prime_print<i>::f() [with int i = 13]':
