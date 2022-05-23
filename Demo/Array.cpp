@@ -20,6 +20,7 @@ public:
     void print();
 };
 
+// constructor
 template <typename T>
 Array<T>::Array(T arr[], int s) {
     ptr = new T[s];
@@ -28,16 +29,19 @@ Array<T>::Array(T arr[], int s) {
         ptr[i] = arr[i];
 }
 
+// destructor
 template <typename T>
 Array<T>::~Array() {
     delete[] ptr;
     std::cout << "Destruktor called" << std::endl;
 }
 
+// [] operator
 template <typename T>
 T Array<T>::operator[](int index) {
     return *(ptr + index);
 }
+
 
 template <typename T>
 int Array<T>::getSize() {
